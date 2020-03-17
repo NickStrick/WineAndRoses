@@ -1,6 +1,7 @@
 
 //variables
 $background-base: black;
+$hover-base: rgb(255, 229, 144);
 
 //media queries
 $mobile: 700px;
@@ -40,15 +41,44 @@ $mobile: 700px;
     font-style: italic;
     font-size: 3rem;
     border-bottom: 1px solid white;
+    margin-bottom: 60px;
   }
 }
 
 //contact section
+
 .info{
+  .msg{
+    color: white;
+    text-decoration: none; 
+    padding: 20px 40px;
+    border: 3px solid white;
+    font-weight: bold;
+    letter-spacing: .3rem;
+  }
+  .msg:hover{
+    color: $hover-base;
+    border: 3px solid $hover-base;
+  }
   .contact-title{
+    letter-spacing: .4rem;
+    margin-bottom: 60px;
 
   }
   .contacts{
     display:flex;
+    justify-content: space-evenly;
+    margin-top: 90px;
+    .item{
+      width: 50%;
+      label{
+        font-size: 1rem;
+        border-bottom: .5px solid white;
+      }
+      p{
+        font-size: 1.2rem;
+        margin-top: 8px;
+      }
+    }
   }
 }
